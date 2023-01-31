@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.label {
+    display: block;
+}
+
+.form-control-qtd {
+    width: 30px;
+    height: 20px;
+}
+
+.form-control-prdt {
+    width: 400px;
+    height: 20px;
+}
+
+.form-control-obs {
+    width: 100px;
+    height: 20px;
+}
+
+.btn-submit {
+    width: 20%;
+}

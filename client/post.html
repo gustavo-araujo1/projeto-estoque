@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- aluraframe/client/post.html -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Negociações</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body class="container">
+    <form class="form">
+
+        <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" class="form-control" required autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required />
+        </div>
+
+        <div class="form-group">
+            <label for="valor">Valor</label>
+            <input id="valor" type="number" class="form-control" min="0.01" step="0.01" value="0.0" required />
+        </div>
+
+        <button class="btn btn-primary" type="submit" onclick="sendPost(event)">Enviar dados para servidor</button>
+    </form>
+
+    <script>
+
+        function sendPost(event) {
+
+            event.preventDefault();
+            console.log("Enviando post");
+
+            //aqui você deve ler os dados do formulário
+            let inputData = document.querySelector('#data').value
+            let inputQuantidade = document.querySelector('#quantidade').value
+            let inputValor = document.querySelector('#valor').value
+            console.log(inputData);
+            console.log(inputQuantidade);
+            console.log(inputValor);
+            //construir o json
+
+
+
+            //enviar o XMLHttpRequest
+
+        }
+    </script>
+</body>
+
+</html>
